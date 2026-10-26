@@ -21,14 +21,14 @@ async function search() {
        
 
         if(!data) {
-            return result.innerHTML = `
+            return result.textContent = `
              Parece que hubo un error, su ciudad aun no esta disponible 💙
             `
         
         }
 //MDN arrays methods
 // js trusthy and falsy values
-        return result.innerHTML = `
+        return result.textContent = `
          Ciudad de ${data.name} esta ${data.skydescriptionlong}
             y la temperatura es de: ${data.tempc} °C 
           
